@@ -23,7 +23,7 @@ Este arquivo possui como objetivo apresentar ao público uma automação em pág
 
 ## Como instalar
 O tutorial será direcionado para execução no sistema operacional Ubuntu, visto que este foi o sistema utilizado pelo autor para execução dos testes.
-### Python 3.8.10 e Gerenciador Pip
+### Python 3.8.10
 Normalmente o Python já vem instalado nativamente na máquina Ubuntu. Mesmo assim, é interessante realizar a checagem da linguagem no terminal através do comando:
 ```bash
 which python3
@@ -34,10 +34,17 @@ que deve retornar algo como:
 ```bash
 sudo apt-get install python3
 ```
+
+### Gerenciador Pip
 No caso do Pip, você pode verificar a versão atual presente no sistema através do comando ```pip --version```, caso o gerenciador de pacotes não tenha sido instalado juntamento ao python, você pode instalar ele através do comando:
 ```bash
 sudo apt-get install python3-pip
 ```
+Após instalar o pip na sua máquina é importante abrir o terminal no diretório onde está o arquivo "requirements.txt" e executar o comando:
+```bash
+pip install -r requirements.txt
+```
+Dessa forma, todas as bibliotecas necessárias serão baixadas automaticamente pelo comando pip.
 
 ### Visual Studio Code
 O Visual Studio Code (vscode) foi o editor escolhido pelo desenvolvedor para o desenvolvimento da aplicação de automação web, mas você está livre para usar o editor de sua preferência para realizar o mesmo processo. Caso você não possua o editor instalado na sua máquina, é possível instalar facilmente através do comando:
@@ -45,12 +52,14 @@ O Visual Studio Code (vscode) foi o editor escolhido pelo desenvolvedor para o d
 sudo snap install --classic code
 ```
 ### RobotFramework
+**[Executar apenas se não executou o comando `pip install -r requirements.txt` anteriormente]**<br>
 A instalação do robotframework é realizada através do gerenciador de pacotes pip, então no terminal ubuntu você pode estar realizando a instalação através do comando:
 ```bash
 pip install robotframework
 ```
 
 ### Selenium Library
+**[Executar apenas se não executou o comando `pip install -r requirements.txt` anteriormente]**<br>
 O robotframework traz algumas bibliotecas por padrão em sua instalação e outras que precisam ser baixadas através do pip, como é o caso da Selenium Library. Sendo assim, caso você não tenha instalado o comando é:
 ```bash
 pip install --upgrade robotframework-seleniumlibrary
