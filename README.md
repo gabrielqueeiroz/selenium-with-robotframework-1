@@ -1,4 +1,4 @@
-# Prova Técnica DBC
+# Automação web com robotframework
 Este arquivo possui como objetivo apresentar ao público uma automação em página Web realizada utilizando o framework RobotFramework e a biblioteca Selenium na linguagem de programação Python. No decorrer do documento serão dados mais detalhes acerca do processo de teste.
 
 ## Configurações do sistema
